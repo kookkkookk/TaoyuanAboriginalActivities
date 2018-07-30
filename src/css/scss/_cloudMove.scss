@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+.cloud{
+    width: 100%;
+    //height: 950px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+    transform-origin: center center;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    pointer-events: none;
+}
+.cloud01, .cloudType1{
+    //background-image: url("~page1_cloud1.png");
+    z-index: 1;
+    animation-name: changeCloud1;
+}
+.cloud02, .cloudType2{
+    //background-image: url("~page1_cloud2.png");
+    z-index: 0;
+    animation-name: changeCloud2;
+}
+
+.cloud_mobile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    transform-origin: center center;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: changeCloudMobile;
+    >img{
+        font-size: 0;
+        max-width: 100%;
+    }
+}
+@keyframes changeCloud1{
+    from {
+        transform: translateX(0px);
+        // transform: scale(1);
+    }
+    to{
+        transform: translateX(-25px);
+        // transform: scale(0.95);
+    }
+}
+@keyframes changeCloud2{
+    from {
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(25px);
+    }
+}
+@keyframes changeCloudMobile{
+    from {
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
+@keyframes changeCloudMobile2{
+    from {
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-10px);
+    }
+}
