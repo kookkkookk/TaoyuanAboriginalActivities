@@ -8,7 +8,7 @@ const config = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].js?[hash:8]',
-        publicPath: "/"
+        publicPath: process.env.NODE_ENV === "development" ? "/" : "./"
     },
     devServer: {
         compress: true,
