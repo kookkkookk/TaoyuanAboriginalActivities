@@ -10,10 +10,10 @@
  - Scss
  - Vuejs
  - Vue Router
- - Gulp
- - webpack
  - axios
  - swiper
+ - Gulp
+ - webpack
 
 ### Test project
 > Please refer to the following steps.
@@ -24,7 +24,7 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 $ cd TaoyuanAboriginalActivities
 $ npm install -d
-$ node run dev
+$ npm run dev
 ```
 
 License
